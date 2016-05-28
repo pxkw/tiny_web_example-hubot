@@ -19,6 +19,8 @@ yo hubot \
   --description=hubot \
   <<< "Y"
 
+cp `dirname $0`/jenkins.coffee .
+
 git init
 git add .
 git commit -m 'Initial'
