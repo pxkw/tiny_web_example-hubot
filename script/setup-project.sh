@@ -21,5 +21,5 @@ yo hubot \
 
 git init
 git add .
-git ci -m 'Initial'
+git commit -m 'Initial'
 
