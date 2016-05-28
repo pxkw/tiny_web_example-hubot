@@ -2,6 +2,9 @@
 
 echo '# Set up start'
 
+cd `dirname $0`
+configDir=`pwd`
+
 echo '## Create project directory'
 
 [ "$PJ_PATH" ] || PJ_PATH="${HOME}/hubotpj"
@@ -19,7 +22,7 @@ yo hubot \
   --description=hubot \
   <<< "Y"
 
-cp `dirname $0`/jenkins.coffee .
+cp $configDir/hubot-scripts.json .
 
 git init
 git add .
