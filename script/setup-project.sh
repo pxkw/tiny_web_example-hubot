@@ -4,7 +4,7 @@ echo '# Set up start'
 
 echo '## Create project directory'
 
-[ "$PJ_PATH" ] || PJ_PATH='~/hubotpj'
+[ "$PJ_PATH" ] || PJ_PATH="${HOME}/hubotpj"
 echo PJ_PATH=$PJ_PATH
 
 mkdir -p $PJ_PATH
